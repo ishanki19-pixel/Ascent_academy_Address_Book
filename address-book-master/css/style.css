@@ -1,0 +1,111 @@
+* {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background:#fff;
+}
+
+.formContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 3rem;
+    column-gap:5rem;
+}
+
+form {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    border-radius: 5px;
+    background: hsla(151, 71%, 90%, 1);
+
+background: linear-gradient(45deg, hsla(151, 71%, 90%, 1) 0%, hsla(155, 70%, 63%, 1) 100%);
+
+background: -moz-linear-gradient(45deg, hsla(151, 71%, 90%, 1) 0%, hsla(155, 70%, 63%, 1) 100%);
+
+background: -webkit-linear-gradient(45deg, hsla(151, 71%, 90%, 1) 0%, hsla(155, 70%, 63%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D5F8E7", endColorstr="#5EE3AC", GradientType=1 );
+}
+.imgSide{
+    width: 100%;
+    height: auto;
+}
+
+.heading {
+    color: #159895;
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+.enter_info {
+    padding: 15px;
+    margin: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+#add_btn:hover, .delete_btn:hover {
+    background-color: rgba(0,0,0,.9);
+    color: white;
+}
+
+.contact_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: start;
+    justify-content: start;
+    gap:5rem;
+    margin: 0rem 3rem;
+}
+
+.contact_card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px 40px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.contact_card p {
+    margin: 2px 0;
+}
+
+.delete_btn {
+    position: absolute;
+    right: -15px;
+    bottom: -15px;
+    border-radius: 50%;
+    height: 30px;
+    width: 35px;
+    border: 1px black solid;
+    background-color: rgba(211, 211, 211);
+    font-size: 20px;
+    text-align: center;
+    padding: 12px 5px 2px 5px;
+}
+
+@media only screen and (min-width: 810px) {
+
+    .contact_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 80%;
+    }    
+
+}
